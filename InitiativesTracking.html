@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Click Example</title>
-<style>
-html, body {
-width: 100%;
-height: 100%;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
-}
-body {
-overflow-y: auto; /* Permitir scroll vertical */
-overflow-x: hidden; /* Desativar scroll horizontal */
-}
-img {
-width: 100%;
-height: auto; /* Mantendo proporção da imagem */
-cursor: pointer;
-display: block;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiatives Tracking</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            overflow-y: auto; /* Permitir scroll vertical */
+            overflow-x: hidden; /* Desativar scroll horizontal */
+        }
+
+        img {
+            width: 100%;
+            height: auto; /* Mantendo proporção da imagem */
+            cursor: pointer;
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-<img id="image" src="sct8.png" alt="Image">
+    <img id="image" src="sct8.png" alt="Image">
 
-<script>
-const imgElement = document.getElementById('image');
-let isFirstImage = true;
+    <script>
+        const imgElement = document.getElementById('image');
+        let isFirstImage = true;
 
-imgElement.addEventListener('click', () => {
-if (isFirstImage) {
-imgElement.src = "sct9.png";
-isFirstImage = false;
-} else {
-window.location.href = "https://sap-presales-br-eur.eu20.sct.sustainability.cloud.sap/launchpad#Shell-home";
-}
-});
-</script>
+        imgElement.addEventListener('click', () => {
+            if (isFirstImage) {
+                imgElement.src = "sct9.png";
+                isFirstImage = false;
+            } else {
+                window.location.href = "https://sap-presales-br-eur.eu20.sct.sustainability.cloud.sap/launchpad#Shell-home";
+            }
+        });
+    </script>
 </body>
+
 </html>
